@@ -96,5 +96,6 @@ module.exports = {
         token
       };
     }
+
   }
 };
