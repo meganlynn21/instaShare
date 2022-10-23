@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, BrowserRouter as Routes, Route } from 'react-router-dom';
+import { BrowserRouter, BrowserRouter as Router, Route } from 'react-router-dom';
 import { Container } from 'semantic-ui-react';
 
 import 'semantic-ui-css/semantic.min.css';
@@ -13,14 +13,14 @@ import Register from './pages/Register';
 
 function App() {
   return (
-      <Routes>
+  <Router>
     <Container>
-    <MenuBar />
-    <exact path='/' element={<Home />}/>
-    <exact path='/login' element={<Login />}/>
-    <exact path='/register' element={<Register />}/>
-    </Container>
-  </Routes>
+      <MenuBar />
+      <Route exact path='/' component={Home}/>
+      <Route exact path='/login' component={Login}/>
+      <Route exact path='/register' component={Register}/>
+      </Container>
+  </Router>
 
   )
 }

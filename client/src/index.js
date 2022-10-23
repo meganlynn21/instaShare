@@ -1,4 +1,3 @@
-
 import ReactDOM from 'react-dom';
 import ApolloProvider from './ApolloProvider';
 
