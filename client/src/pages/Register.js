@@ -21,8 +21,8 @@ function Register() {
       console.log(result);
     },
     onError(err) {
-      console.log(err.graphQLErrors[0].extensions.exception.errors);
-      setErrors(err.graphQLErrors[0].extensions.exception.errors);
+      console.log(err.graphQLErrors[0].extensions.errors);
+      setErrors(err.graphQLErrors[0].extensions.errors);
     },
     variables: values,
   });
@@ -42,6 +42,7 @@ function Register() {
           type="text"
           name="username"
           value={values.username}
+          error={errors.username ? true : false}
           onChange={onChange}
         />
         <Form.Input
@@ -50,6 +51,7 @@ function Register() {
           type="email"
           name="email"
           value={values.email}
+          error={errors.email ? true : false}
           onChange={onChange}
         />
         <Form.Input
@@ -58,6 +60,7 @@ function Register() {
           type="password"
           name="password"
           value={values.password}
+          error={errors.password ? true : false}
           onChange={onChange}
         />
         <Form.Input
@@ -66,6 +69,7 @@ function Register() {
           type="password"
           name="confirmPassword"
           value={values.confirmPassword}
+          error={errors.confirmPassword ? true : false}
           onChange={onChange}
         />
         <Button type="submit" primary>
