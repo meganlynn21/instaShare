@@ -5,7 +5,7 @@ import moment from "moment";
 
 import { AuthContext } from "../context/auth";
 import LikeButton from "./LikeButton";
-// import DeleteButton from "./DeleteButton";
+import DeleteButton from "./DeleteButton";
 // import MyPopup from "../util/MyPopup";
 
 function PostCard({
@@ -38,8 +38,8 @@ function PostCard({
             {commentCount}
           </Label>
         </Button>
-        {/* </MyPopup>
-        {user && user.username === username && <DeleteButton postId={id} />} */}
+        {/* </MyPopup> */}
+        {user && user.username === username && <DeleteButton postId={id} />}
       </Card.Content>
     </Card>
   );
