@@ -5,6 +5,8 @@ I am still working on making this responsive on mobile but it looks fine on desk
 
 I used the heroku server to deploy the back-end. I used a custom domain I made and Netlify to deploy the client side.
 
+Make a post and try it out! Once you have registered an account and are logged in, you can create posts, like posts, and comment on posts. You can also delete your own comments and delete your posts.
+
 Click the link here for the website
 https://www.instashare.app/
 
