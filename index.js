@@ -1,9 +1,10 @@
+const dotenv = require("dotenv");
+dotenv.config({ path: "./.env" });
 const { ApolloServer, PubSub } = require("apollo-server");
 const mongoose = require("mongoose");
 
 const typeDefs = require("./graphql/typeDefs");
 const resolvers = require("./graphql/resolvers");
-const { MONGODB } = require("./config.js");
 
 const pubsub = require("graphql-subscriptions");
 
@@ -16,7 +17,7 @@ const server = new ApolloServer({
 });
 
 mongoose
-  .connect(MONGODB, { useNewUrlParser: true })
+  .connect(process.env.MONGODB_URI, { useNewUrlParser: true })
   .then(() => {
     console.log("MongoDB Connected");
     return server.listen({ port: PORT });
