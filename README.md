@@ -3,7 +3,7 @@ I implemented a GraphQL server that uses Node and Express to communicate to a Mo
 
 I am still working on making this responsive on mobile but it looks fine on desktop.
 
-I did buy a domain to host it on since I plan on updating it more and adding things to it. But it is not ready yet because I am waiting for the SSL certificate to be verified. I used the heroku server to deploy the back-end and I used Netlify to deploy the client side
+I used the heroku server to deploy the back-end. I used a custom domain I made and Netlify to deploy the client side
 
 Click the link here for the website
 https://www.instashare.app/
