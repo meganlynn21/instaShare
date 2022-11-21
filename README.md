@@ -6,7 +6,7 @@ I am still working on making this responsive on mobile but it looks fine on desk
 I did buy a domain to host it on since I plan on updating it more and adding things to it. But it is not ready yet because I am waiting for the SSL certificate to be verified. I used the heroku server to deploy the back-end and I used Netlify to deploy the client side
 
 Click the link here for the website
-https://https://www.instashare.app/
+https://www.instashare.app/
 
 **Homepage**
 
