@@ -1,7 +1,7 @@
 I have created a social media app named InstaShare. I used MongoDB, Express, Node, React, GraphQL, and Node (the MERNG stack).
 I implemented a GraphQL server that uses Node and Express to communicate to a MongoDB Database and fetch and persist data to the websites back-end.
 
-I did buy a domain to host it on since I plan on updating it more and adding things to it. But it is not ready yet because I am waiting for the SSL certificate. I used the heroku server to deploy the back-end and I used Netlify to deploy the client side
+I did buy a domain to host it on since I plan on updating it more and adding things to it. But it is not ready yet because I am waiting for the SSL certificate to be verified. I used the heroku server to deploy the back-end and I used Netlify to deploy the client side
 
 Click the link here for the website
 https://amazing-crepe-41eac6.netlify.app/
