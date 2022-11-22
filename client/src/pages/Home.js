@@ -15,7 +15,8 @@ function Home() {
   } = useQuery(FETCH_POSTS_QUERY);
 
   return (
-    <Grid columns={3}>
+    <div className="ui stackable three column grid">
+      <div className="page-title"></div>
       <Grid.Row className="page-title">
         <h1>Recent Posts</h1>
       </Grid.Row>
@@ -38,7 +39,7 @@ function Home() {
           </Transition.Group>
         )}
       </Grid.Row>
-    </Grid>
+    </div>
   );
 }
 
