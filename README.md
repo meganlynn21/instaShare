@@ -1,7 +1,5 @@
-I have created a social media app named InstaShare. I used MongoDB, Express, Node, React, GraphQL, and Node (the MERNG stack).
+I have created a responsive social media app named InstaShare. I used MongoDB, Express, Node, React, GraphQL, and Node (the MERNG stack).
 I implemented a GraphQL server that uses Node and Express to communicate to a MongoDB Database and fetch and persist data to the websites back-end.
-
-I am still working on making this responsive on mobile but it looks fine on desktop.
 
 I used the heroku server to deploy the back-end. I used a custom domain I made and Netlify to deploy the client side.
 
