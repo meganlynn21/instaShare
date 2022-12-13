@@ -4,23 +4,39 @@
     font-size: 2rem;
     margin-top: 10px;
 }
-
+/* Forms */
 .form-container{
     width: 400px;
     margin: auto;
 }
+
+.form-container.ui.stackable.container{
+  display: flex;
+  justify-content: right;
+  margin-bottom: 20px;
+
+} 
 
 .ui.teal.button:focus,
 .ui.teal.buttons .button:focus {
   background-color: #00b5ad;
 }
 
- .form-container.ui.stackable.container{
-  display: flex;
-  justify-content: right;
-  margin-bottom: 20px;
+/* Home Page */
 
-} 
+#left {
+  /* border: solid purple; */
+  width: 35%;
+  flex: 1
+}
+
+#right {
+  flex: 1;
+  /* border: solid green; */
+  width: 65%;
+  flex:1
+}
+
 #input-box{
   min-width: 300px;
   min-height: 200px;
@@ -50,31 +66,49 @@
   border: solid red;
 }
 
- 
+/* Spinner */
+.ui.container{
+display: inline-block;
+}
+
+.ui.active.inverted.dimmer{
+  margin-top:20px;
+}
+/* Img Logo */
+#logo{
+  height: 300px;
+  /* border: solid red; */
+  margin-left:0;
+}
+
+/* Flex container */
 .flex-container {
   display: flex;
   /* border: solid blue */
 }
 
-/* .flex-child {
-  flex: 1;
-  border: 2px solid red;
-}   */
-
-/* .flex-child:first-child {
-  margin-right: 20px;
-}  */
-
-
-#left {
+/* Main Page before Login */
+#left-img {
   /* border: solid purple; */
-  width: 35%;
-  flex: 1
+  max-width: 60%;
+  flex: 1;
 }
 
-#right {
+#right-form {
   flex: 1;
   /* border: solid green; */
-  width: 65%;
-  flex:1
+  min-width: 40%;
+}
+
+#login-btn{
+  width: 100%;
+  padding: 10px;
+  font-size: large;
+}
+
+/* Register Page */
+#register-btn{
+  width: 100%;
+  padding: 10px;
+  font-size: large;
 }

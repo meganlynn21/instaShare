@@ -72,7 +72,7 @@ function Register(props) {
           error={errors.confirmPassword ? true : false}
           onChange={onChange}
         />
-        <Button type="submit" primary>
+        <Button type="submit" id="register-btn" primary>
           Register
         </Button>
       </Form>
