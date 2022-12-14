@@ -27,7 +27,7 @@ function PostForm() {
     createPost();
   }
   return (
-    <>
+    <div className="container">
       <Form onSubmit={onSubmit}>
         <Form.TextArea
           placeholder="Share a thought!"
@@ -49,7 +49,7 @@ function PostForm() {
           </ul>
         </div>
       )}
-    </>
+    </div>
   );
 }
 
