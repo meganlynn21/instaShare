@@ -40,8 +40,6 @@ h2 {
 .ui.container > .column {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  border: red;
 }
 
 #root > div > div > div.ui.container > div > div.post.row > div {
@@ -54,6 +52,11 @@ h2 {
 .ui.active.inverted.dimmer {
   margin-top: 20px;
   color: red;
+}
+
+/* Cards */
+.ui.cards {
+  text-align: left;
 }
 
 /* Main Page  */
