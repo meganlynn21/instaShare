@@ -29,8 +29,6 @@ function PostForm() {
   return (
     <>
       <Form onSubmit={onSubmit}>
-        <h2>Create a post:</h2>
-
         <Form.TextArea
           placeholder="Share a thought!"
           type="text"
@@ -40,8 +38,8 @@ function PostForm() {
           error={error ? true : false}
           maxlength="300"
         />
-        <Button type="submit" color="violet">
-          Submit
+        <Button className="share-btn" type="submit" color="violet">
+          Share
         </Button>
       </Form>
       {error && (

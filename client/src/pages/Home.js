@@ -24,7 +24,7 @@ function Home() {
 
   return (
     <div className="ui container">
-      <div className="ui stackable grid">
+      <div className="ui centered grid">
         <>
           {loading ? (
             <>
@@ -36,14 +36,14 @@ function Home() {
                 {/* <div className="ten wide mobile ten wide tablet ten wide computer column"> */}
                 <div className="column">{user && <PostForm />}</div>
               </div>
-              <div className="row">
-                <div className="column fluid">
-                  <Header />
-                </div>
-              </div>
               <Transition.Group>
                 <div class="ui one column padded">
                   <div class="ui container">
+                    <div className="row">
+                      <div className="column">
+                        <Header />
+                      </div>
+                    </div>
                     {posts &&
                       posts.map((post) => (
                         <div class="column">

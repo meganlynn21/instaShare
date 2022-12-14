@@ -14,10 +14,9 @@ body {
 
 .page-title {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   font-size: 2rem;
-  margin-top: 10px;
-  margin-right: 17%;
+  margin: 20px;
 }
 /* Forms */
 .form-container {
@@ -40,17 +39,21 @@ h2 {
 
 .ui.container > .column {
   display: flex;
-  justify-content: right;
-  margin-right: 10%;
+  justify-content: center;
+  /* align-items: center; */
+  border: red;
+}
+
+#root > div > div > div.ui.container > div > div.post.row > div {
+  display: flex;
+  justify-content: center;
 }
 
 /* Spinner */
-/* .ui.container{
-display: inline-block;
-} */
 
 .ui.active.inverted.dimmer {
   margin-top: 20px;
+  color: red;
 }
 
 /* Main Page  */
@@ -72,10 +75,9 @@ display: inline-block;
   margin: auto;
   justify-content: center;
 }
-#login-button {
-  background-color: #654aa8;
-}
-#login-btn {
+
+#login-btn,
+.share-btn {
   width: 100%;
   padding: 10px;
   font-size: large;
@@ -86,11 +88,6 @@ display: inline-block;
 /* Img Logo */
 .logo {
   height: 300px;
-  /* border: solid red; */
-}
-
-.logo-container {
-  border: solid green;
 }
 
 /* Register Page */
@@ -124,15 +121,17 @@ footer {
 
 @media only screen and (min-width: 435px) {
   div.ui.container > div > div:nth-child(2) > div > form > div > textarea {
-    height: 150px;
+    height: 200px;
   }
   form.ui.form {
     width: 400px;
   }
 }
 
-@media only screen and (min-width: 100px) and (max-width: 1000px) {
-  .page-title {
-    justify-content: center;
-  }
-}
+/* @media only screen and (min-width: 400px) and (max-width: 775px) {
+  .ui.container > .column,
+  #root > div > div > div.ui.container > div > div.post.row > div .page-title {
+    display: flex;
+    margin-left: 10%;
+  } 
+} */
