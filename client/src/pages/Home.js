@@ -1,6 +1,12 @@
 import React, { useContext } from "react";
 import { useQuery } from "@apollo/react-hooks";
-import { Grid, Transition } from "semantic-ui-react";
+import {
+  Grid,
+  Transition,
+  Segment,
+  GridColumn,
+  GridRow,
+} from "semantic-ui-react";
 
 import Spinner from "../components/Spinner";
 import Header from "../components/Header";
@@ -17,8 +23,8 @@ function Home() {
   } = useQuery(FETCH_POSTS_QUERY);
 
   return (
-    <div className="ui grid">
-      <div className="ui container">
+    <div className="ui container">
+      <div className="ui stackable grid">
         <>
           {loading ? (
             <>
@@ -26,30 +32,34 @@ function Home() {
             </>
           ) : (
             <>
-              <div class="flex-container">
-                <div class="flex-child magenta" id="left">
-                  <div className="alignLeft form-container ui stackable container">
-                    {user && (
-                      <Grid.Column>
-                        <PostForm />
-                      </Grid.Column>
-                    )}
-                  </div>
-                </div>
-                <div class="flex-child green" id="right">
-                  <div className="form-container ui stackable container">
-                    <Header />
-                  </div>
-                  <Transition.Group>
-                    {posts &&
-                      posts.map((post) => (
-                        <Grid.Column key={post.id} style={{ marginBottom: 20 }}>
-                          <PostCard post={post} />
-                        </Grid.Column>
-                      ))}
-                  </Transition.Group>
+              <div className="post row">
+                {/* <div className="ten wide mobile ten wide tablet ten wide computer column"> */}
+                <div className="column">{user && <PostForm />}</div>
+              </div>
+              <div className="row">
+                <div className="column fluid">
+                  <Header />
                 </div>
               </div>
+              <Transition.Group>
+                <div class="ui one column padded">
+                  <div class="ui container">
+                    {posts &&
+                      posts.map((post) => (
+                        <div class="column">
+                          <div className="row">
+                            <Grid.Column
+                              key={post.id}
+                              style={{ marginBottom: 20 }}
+                            >
+                              <PostCard post={post} />
+                            </Grid.Column>
+                          </div>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              </Transition.Group>
             </>
           )}
         </>

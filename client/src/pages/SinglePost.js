@@ -88,10 +88,10 @@ function SinglePost(props) {
                     labelPosition="right"
                     onClick={() => console.log("Comment on post")}
                   >
-                    <Button basic color="blue">
+                    <Button basic color="violet">
                       <Icon name="comments" />
                     </Button>
-                    <Label basic color="blue" pointing="left">
+                    <Label basic color="pink" pointing="left">
                       {commentCount}
                     </Label>
                   </Button>
@@ -117,7 +117,7 @@ function SinglePost(props) {
                       />
                       <button
                         type="submit"
-                        className="ui button teal"
+                        className="ui button violet"
                         disabled={comment.trim() === ""}
                         onClick={submitComment}
                       >

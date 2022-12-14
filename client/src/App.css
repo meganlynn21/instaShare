@@ -1,114 +1,138 @@
-.page-title{
-    display: block !important;
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 10px;
+/* Google Fonts */
+/* font-family: 'Share Tech', sans-serif; */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-/* Forms */
-.form-container{
-    width: 400px;
-    margin: auto;
+page html,
+body {
+  background-color: #e6e6ff;
+  font-family: "Share Tech", sans-serif;
+  margin: 0;
 }
 
-.form-container.ui.stackable.container{
+.page-title {
+  display: flex;
+  justify-content: end;
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-right: 17%;
+}
+/* Forms */
+.form-container {
+  width: 400px;
+  margin: auto;
+}
+
+.form-container.ui.stackable.container {
   display: flex;
   justify-content: right;
   margin-bottom: 20px;
-
-} 
-
-.ui.teal.button:focus,
-.ui.teal.buttons .button:focus {
-  background-color: #00b5ad;
 }
 
 /* Home Page */
 
-#left {
-  /* border: solid purple; */
-  width: 35%;
-  flex: 1
+h1,
+h2 {
+  font-family: "Share Tech", sans-serif;
 }
 
-#right {
-  flex: 1;
-  /* border: solid green; */
-  width: 65%;
-  flex:1
-}
-
-#input-box{
-  min-width: 300px;
-  min-height: 200px;
-}
-
-.alignLeft.form-container.ui.stackable.container{
-  justify-content: left;
-  margin-bottom: 0;
-  margin-top: 20px;
-}
-
-.ui.stackable.container{
-  display: flex;
-  justify-content: left;
-  padding: 20px;
-}
-
-.ui.cards{
+.ui.container > .column {
   display: flex;
   justify-content: right;
- 
-}
-
-.ui.card{
-  background-color: lightblue;
-  min-width: 400px;
-  border: solid red;
+  margin-right: 10%;
 }
 
 /* Spinner */
-.ui.container{
+/* .ui.container{
 display: inline-block;
+} */
+
+.ui.active.inverted.dimmer {
+  margin-top: 20px;
 }
 
-.ui.active.inverted.dimmer{
-  margin-top:20px;
+/* Main Page  */
+/* #root > div > div > div.form-container > div > div > form{
+  background-color: blue !important;
+  border: solid red;
 }
-/* Img Logo */
-#logo{
-  height: 300px;
-  /* border: solid red; */
-  margin-left:0;
-}
-
-/* Flex container */
-.flex-container {
-  display: flex;
-  /* border: solid blue */
+#root > div > div > div.form-container > div > div > form > div:nth-child(1) > div{
+  background-color: yellow !important;
 }
 
-/* Main Page before Login */
-#left-img {
-  /* border: solid purple; */
-  max-width: 60%;
-  flex: 1;
-}
+#root > div > div > div.form-container > div > div > form > div:nth-child(2){
+  background-color: yellowgreen !important;
+} */
 
-#right-form {
-  flex: 1;
-  /* border: solid green; */
-  min-width: 40%;
-}
+/* UI Container */
 
-#login-btn{
+.ui.grid.container {
+  margin: auto;
+  justify-content: center;
+}
+#login-button {
+  background-color: #654aa8;
+}
+#login-btn {
   width: 100%;
   padding: 10px;
   font-size: large;
+  background-color: #654aa8;
+  margin-bottom: 10px;
+}
+
+/* Img Logo */
+.logo {
+  height: 300px;
+  /* border: solid red; */
+}
+
+.logo-container {
+  border: solid green;
 }
 
 /* Register Page */
-#register-btn{
+#register-btn {
   width: 100%;
   padding: 10px;
   font-size: large;
+}
+
+/* Header */
+header {
+  padding: 20px;
+}
+/* Footer */
+footer {
+  padding: 50px;
+}
+/* #root > div > div > div.ui.violet.massive.pointing.secondary.menu > a{
+  color: purple;
+} */
+/* #root > div > div > div.ui.teal.massive.pointing.secondary.menu > a{
+  background-color: #654AA8 !important;
+  color: magenta !important;
+} */
+
+.ui.cards {
+  max-height: 300px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 435px) {
+  div.ui.container > div > div:nth-child(2) > div > form > div > textarea {
+    height: 150px;
+  }
+  form.ui.form {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1000px) {
+  .page-title {
+    justify-content: center;
+  }
 }

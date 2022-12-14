@@ -14,8 +14,8 @@ function PostCard({
   const { user } = useContext(AuthContext);
 
   return (
-    <div class="ui stackable cards">
-      <Card>
+    <div class="ui cards">
+      <Card raised>
         <Card.Content>
           <Image
             floated="right"
@@ -32,10 +32,10 @@ function PostCard({
           <LikeButton user={user} post={{ id, likes, likeCount }} />
           <MyPopup content="Comment on post">
             <Button labelPosition="right" as={Link} to={`/posts/${id}`}>
-              <Button color="blue" basic>
+              <Button color="violet" basic>
                 <Icon name="comments" />
               </Button>
-              <Label basic color="blue" pointing="left">
+              <Label basic color="pink" pointing="left">
                 {commentCount}
               </Label>
             </Button>
