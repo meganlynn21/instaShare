@@ -32,6 +32,14 @@ body {
 
 /* Home Page */
 
+.ui.form .field.field input:-webkit-autofill {
+  /* box-shadow: inset 0 0 0 100px ivory !important;
+  border-color: #e5dfa1 !important; */
+  box-shadow: 0 0 0 100px white inset !important; /* Change the color to your own background color */
+  /* border-color: #dc3a8e !important; */
+  -webkit-text-fill-color: #333;
+}
+
 h1,
 h2 {
   font-family: "Share Tech", sans-serif;
@@ -100,6 +108,10 @@ h2 {
   font-size: large;
 }
 
+.form-container {
+  border: red;
+}
+
 /* Header */
 header {
   padding: 20px;
@@ -130,7 +142,6 @@ footer {
     width: 400px;
   }
 }
-
 /* @media only screen and (min-width: 400px) and (max-width: 775px) {
   .ui.container > .column,
   #root > div > div > div.ui.container > div > div.post.row > div .page-title {
