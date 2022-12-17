@@ -8,9 +8,14 @@ Make a post and try it out! Once you have registered an account and are logged i
 Click the link here for the website
 https://www.instashare.app/
 
+**Main Page**
+
+![image](https://user-images.githubusercontent.com/83522315/208264980-1c887dfc-13c3-4147-af0d-131880235a3e.png)
+
 **Homepage**
 
-![image](https://user-images.githubusercontent.com/83522315/198906377-f5ff79af-89f1-494c-a622-470c777de488.png)
+![image](https://user-images.githubusercontent.com/83522315/208265000-5351a3dc-574f-4c79-8e93-2b6791949249.png)
+![image](https://user-images.githubusercontent.com/83522315/208265011-4b725ea3-ba31-441c-a1a5-447f3b70611d.png)
 
 **Here is the web page after the user logs in**
 
@@ -18,11 +23,10 @@ https://www.instashare.app/
 
 **Register Page**
 
-![image](https://user-images.githubusercontent.com/83522315/203159101-8be5b84e-eed0-40a9-991f-59580b32143b.png)
+![image](https://user-images.githubusercontent.com/83522315/208265025-38801e68-cce3-492a-b3de-61c510cdd049.png)
 
 **Login Page**
 
-![image](https://user-images.githubusercontent.com/83522315/203159061-87c9a1d7-908b-4644-8d50-97869bbcc828.png)
-
+![image](https://user-images.githubusercontent.com/83522315/208265038-5ac26c74-5f17-46f4-95e2-31900113b2b4.png)
 
 
