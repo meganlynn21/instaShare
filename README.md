@@ -16,10 +16,6 @@ https://www.instashare.app/
 
 ![image](https://user-images.githubusercontent.com/83522315/208265107-d72d9cfc-138b-4116-8dc9-de8926a381fe.png)
 
-**Here is the web page after the user logs in**
-
-![image](https://user-images.githubusercontent.com/83522315/203159011-bb4102c6-2b4f-4281-a01e-75abad8974f9.png)
-
 **Register Page**
 
 ![image](https://user-images.githubusercontent.com/83522315/208265025-38801e68-cce3-492a-b3de-61c510cdd049.png)
